@@ -1,13 +1,12 @@
 import React from 'react';
+import Logon from './pages/Logon';
 import './pages/global.css';
-
-import Routes from './routes';
 
 function App() {
 
   return (
     <React.Fragment>
-      <Routes/>
+      <Logon/>
     </React.Fragment>
   );
 }
