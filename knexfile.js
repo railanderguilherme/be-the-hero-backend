@@ -33,8 +33,8 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'railander',
-      password: 'rai333'
+      user:     'username',
+      password: 'password'
     },
     pool: {
       min: 2,
@@ -43,6 +43,17 @@ module.exports = {
     migrations: {
       tableName: 'knex_migrations'
     }
-  }
+  },
+
+  test: {
+    client: 'sqlite3',
+    connection: {
+      filename: './src/database/test.sqlite'
+    },
+    migrations: {
+      directory: './src/database/migrations'
+    },
+    useNullAsDefault: true
+  },
 
 };
